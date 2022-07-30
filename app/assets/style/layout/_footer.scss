@@ -1,0 +1,151 @@
+footer {
+  background-color: $red;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $red-dark;
+    }
+  }
+
+  p {
+    color: $white;
+  }
+
+  .container {
+    padding: 24px 15px;
+    @include tablet() {
+      padding: 48px 36px 40px;
+    }
+    @include desktop() {
+      padding: 48px 12px 32px;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    @include tablet() {
+      display: flex;
+      gap: 48px;
+
+      .nav-link {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid $white;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+
+  @include tablet() {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+
+  @include tablet() {
+    gap: 16px;
+  }
+
+  @include desktop() {
+    gap: 32px;
+  }
+}
+
+.social-image {
+  width: 24px;
+
+  @include tablet() {
+    width: 40px;
+  }
+
+  @include desktop() {
+    width: 48px;
+  }
+}
+
+.contact {
+  .material-icons {
+    margin-right: 8px;
+  }
+
+  @include tablet() {
+    width: 100%;
+
+    .material-icons {
+      font-size: 48px;
+      margin-right: 16px;
+    }
+  }
+}
+
+.contact-item {
+  & + & {
+    margin-top: 8px;
+  }
+
+  @include tablet() {
+    &:first-child {
+      margin-top: 24px;
+    }
+  }
+}
+
+.contact-link {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include tablet() {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
+.copyright {
+  @include tablet() {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.copyright-item {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  & + & {
+    margin-top: 8px;
+  }
+
+  @include tablet() {
+    &:not(&:first-child) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    & + & {
+      margin: 0;
+    }
+  }
+}

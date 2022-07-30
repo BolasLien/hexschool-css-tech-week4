@@ -1,0 +1,74 @@
+h1.title{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  border-left: 8px solid var(--color-red-border);
+}
+
+h2.subtitle{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+main.qna {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+.qna-item + .qna-item{
+  margin-top: 24px;
+}
+
+.qna-item h3{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.qna-item p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* ---- tablet ---- */
+@media (min-width: 768px) {
+  main.qna {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  h1.title{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+
+  .qna-item + .qna-item{
+    margin-top: 32px;
+  }
+}
+
+/* ---- desktop ---- */
+@media (min-width: 1280px) {
+
+  main.qna {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+
+  h1.title{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+
+  .qna-item + .qna-item{
+    margin-top: 32px;
+  }
+}
