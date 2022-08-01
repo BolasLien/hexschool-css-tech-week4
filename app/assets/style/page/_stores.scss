@@ -1,0 +1,71 @@
+.store-list {
+  padding-top: 24px;
+
+  @include tablet() {
+    padding-top: 40px;
+  }
+
+  @include card-wrap;
+}
+
+.store-card {
+  @include card;
+}
+
+.store-name {
+  font-size: 24px;
+  line-height: 36px;
+  color: $store-info-text;
+  border: 1px solid $store-info-border;
+
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.store-pic {
+  aspect-ratio: calc(348 / 224);
+
+  @include tablet(){
+    aspect-ratio: calc(336 / 224);
+  }
+
+  @include desktop(){
+    aspect-ratio: calc(416 / 224);
+  }
+}
+
+.store-info {
+  padding: 16px 24px;
+  border: 1px solid $store-info-border;
+
+  .store-info-item {
+    display: flex;
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  .material-icons-outlined {
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 8px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    color: $store-info-text;
+  }
+}
+
+.more-btn {
+  font-size: 19px;
+  line-height: 27px;
+  background-color: $black;
+  color: $white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+}

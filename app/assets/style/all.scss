@@ -1,14 +1,18 @@
-@import 'base/variable.scss';
+// 初始化
 @import 'base/reset.scss';
+@import 'base/variable.scss';
 @import 'base/font.scss';
 
-@import 'mixin/breakpoint';
+@import 'mixin/breakpoint.scss';
+@import 'mixin/card-wrap.scss';
 
 @import 'layout/container.scss';
 @import 'layout/header.scss';
 @import 'layout/footer.scss';
+@import 'layout/page.scss';
 
 @import 'component/material-icon.scss';
 
 @import 'page/index.scss';
 @import 'page/faq.scss';
+@import 'page/stores.scss';
