@@ -1,17 +1,32 @@
-.container {
+@mixin mobile-container {
   max-width: 100%;
   padding-left: 13px;
   padding-right: 14px;
+}
+
+@mixin tablet-container {
+  max-width: 100%;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+
+@mixin desktop-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.container {
+  @include mobile-container;
 
   @include tablet() {
-    padding-left: 36px;
-    padding-right: 36px;
+    @include tablet-container;
   }
 
   @include desktop() {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding-right: 12px;
-    padding-left: 12px;
+    @include desktop-container;
   }
 }
+

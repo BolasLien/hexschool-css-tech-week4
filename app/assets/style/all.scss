@@ -5,6 +5,7 @@
 
 @import 'mixin/breakpoint.scss';
 @import 'mixin/card-wrap.scss';
+@import 'mixin/link-hover.scss';
 
 @import 'layout/container.scss';
 @import 'layout/header.scss';
@@ -12,7 +13,10 @@
 @import 'layout/page.scss';
 
 @import 'component/material-icon.scss';
+@import 'component/pagination.scss';
+@import 'component/tab.scss';
 
 @import 'page/index.scss';
+@import 'page/product.scss';
 @import 'page/faq.scss';
 @import 'page/stores.scss';

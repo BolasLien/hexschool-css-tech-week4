@@ -1,0 +1,9 @@
+// 連結增加動畫效果
+@mixin link {
+  cursor: pointer;
+  transition: all .1s;
+
+  &:hover{
+    @content;
+  }
+}
