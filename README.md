@@ -11,7 +11,9 @@ app/assets/style 樣式目錄
 │   ├── _reset.scss
 │   └── _variable.scss
 ├── component 元件
-│   └── _material-icon.scss
+│   ├── _material-icon.scss
+│   ├── _pagination.scss
+│   └── _tab.scss
 ├── layout 版面
 │   ├── _container.scss
 │   ├── _footer.scss
@@ -19,10 +21,12 @@ app/assets/style 樣式目錄
 │   └── _page.scss
 ├── mixin 常用語法
 │   ├── _breakpoint.scss
-│   └── _card-wrap.scss
+│   ├── _card-wrap.scss
+│   └── _link-hover.scss
 └── page 頁面
     ├── _faq.scss
     ├── _index.scss
+    ├── _product.scss
     └── _stores.scss
 ```
 
