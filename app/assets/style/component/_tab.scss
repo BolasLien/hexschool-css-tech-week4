@@ -31,7 +31,6 @@
     @include link(){
       color: $red;
       background-color: $pink;
-      font-size: 2.1rem;
     }
 
     @include tablet(){
