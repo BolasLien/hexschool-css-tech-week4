@@ -7,6 +7,7 @@ app/assets/style 樣式目錄
 .
 ├── all.scss
 ├── base 初始
+│   ├── _base.scss
 │   ├── _font.scss
 │   ├── _reset.scss
 │   └── _variable.scss
@@ -24,9 +25,9 @@ app/assets/style 樣式目錄
 │   ├── _card-wrap.scss
 │   └── _link-hover.scss
 └── page 頁面
+    ├── _blog.scss
     ├── _faq.scss
     ├── _index.scss
     ├── _product.scss
     └── _stores.scss
 ```
-
