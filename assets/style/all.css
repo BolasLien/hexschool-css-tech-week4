@@ -49,6 +49,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  line-height: 1.5; }
+
 img {
   display: block;
   max-width: 100%;
@@ -60,6 +63,8 @@ img {
 
 a {
   text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
 
 select {
   -webkit-appearance: none;
@@ -770,5 +775,170 @@ h2.subtitle {
       .store-information .detail {
         padding: 0;
         max-width: 100%; } }
+
+.blog-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .blog-nav {
+      display: block;
+      background-color: #650300; }
+      .blog-nav .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+
+.blog-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 48px; }
+
+.blog-nav-link {
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s; }
+  .blog-nav-link:hover {
+    color: #555555; }
+
+.search-link.material-icons {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s; }
+  .search-link.material-icons:hover {
+    color: #555555; }
+
+.article-list {
+  margin-bottom: 80px; }
+
+.article-item + .article-item {
+  margin-top: 24px; }
+  @media (min-width: 1280px) {
+    .article-item + .article-item {
+      margin-top: 60px; } }
+
+@media (min-width: 768px) {
+  .article-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.article-head {
+  margin-bottom: 8px; }
+  @media (min-width: 768px) {
+    .article-head {
+      max-width: 50%;
+      padding-right: 12px;
+      margin-bottom: 0px; } }
+
+.article-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .article-body {
+      max-width: 50%;
+      padding-left: 12px;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; } }
+  @media (min-width: 1280px) {
+    .article-body {
+      display: block;
+      position: relative; } }
+
+.article-title {
+  width: 100%;
+  color: #650300;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400; }
+  @media (min-width: 1280px) {
+    .article-title {
+      font-size: 32px;
+      line-height: 48px; } }
+
+.article-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .article-subtitle {
+      margin-bottom: 4px; } }
+  @media (min-width: 1280px) {
+    .article-subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 16px; } }
+
+.article-updated {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  opacity: 0.7;
+  position: absolute;
+  right: 0; }
+  @media (min-width: 1280px) {
+    .article-updated {
+      line-height: 30px; } }
+
+.article-note {
+  display: none; }
+
+@media (min-width: 768px) {
+  .article-note-tablet {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555555;
+    display: block; } }
+
+@media (min-width: 1280px) {
+  .article-note-tablet {
+    display: none; } }
+
+@media (min-width: 1280px) {
+  .article-note-desktop {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #555555;
+    display: block; } }
+
+.more-link {
+  display: none;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s; }
+  @media (min-width: 1280px) {
+    .more-link {
+      display: block;
+      color: #650300;
+      font-size: 36px;
+      line-height: 54px;
+      font-weight: 900;
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
+  .more-link:hover {
+    color: #fbf2f2; }
 
 /*# sourceMappingURL=all.css.map */
